@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter Analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class='wrapper'>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lag">
+            <a class="navbar-brand" href="index.html">Home</a>
+        </nav>    
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">The Truth Is Out There</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Purpose of Austin Animal Center Analysis</h3>
+                <p>The purpose of this analysis is to review data on animals in the Austin Animal Center 
+                    to better understand the inventory of the animals and to create a model that predicts 
+                    the outcome whether that is:
+                    <li>Adoption</li>
+                    <li>Transfer</li>
+                    <li>Return to Owner</li>
+                    <li>Died</li>
+                </p>
+            </div>
+            <div class="col-md-7">
+                <h3>Austin Animal Center Backgroup</h3>
+                <p>The Austin Animal Center is the largest no-kill animal shelter in the United States 
+                    and houses 18,000 animals each year. The shelter is an open intake facility where all 
+                    lost or surrendered animals are accepted. As the city of Austin grows the number of 
+                    animal intakes will increase making the burden on the shelter greater. 
+                </p>    
+                <p>The ability of the shelter to remain no-kill is dependent on having available room to 
+                    house all of the animals and makes understanding the outcome of the animals and the 
+                    success of the adoption program incential.
+                </p>
+                <h4><a href="https://data.world/rdowns26/austin-animal-shelter">Source of Data</a></h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Visual Analysis</h3>
+                <iframe src="https://public.tableau.com/shared/HWW5HN9PY?:display_count=n&:origin=viz_share_link"
+                width="1300" height="955"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://public.tableau.com/views/Animal_Shelter_16298624082670/Month?:language=en-US&:display_count=n&:origin=viz_share_link"
+                width="1300" height="955"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://public.tableau.com/views/Animal_Shelter_16298624082670/Month?:language=en-US&:display_count=n&:origin=viz_share_link"
+                width="1300" height="955"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://public.tableau.com/views/Animal_Shelter_16298624082670/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+                width="1300" height="955"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="bg-dark">
+                    <p>Filter Search</p>
+                </form>
+                <ul class="list-group bg-dark">
+                    <li class="list-group-item bg-dark">
+                        <label for="date">Enter Date</label>
+                        <input type="text" placeholder="1/10/2010" id="datetime" class="form-control"/>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="city">Enter City</label>
+                        <input type="text" placeholder="fresno" id="city" class="form-control"/>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="state">Enter State</label>
+                        <input type="text" placeholder="ca" id="state" class="form-control"/>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="country">Enter Country</label>
+                        <input type="text" placeholder="us" id="country" class="form-control"/>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="shape">Enter Shape</label>
+                        <input type="text" placeholder="light" id="shape" class="form-control"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Animal ID</th>
+                            <th>Name Intake</th>
+                            <th>DateTime Intake</th>
+                            <th>Found Location</th>
+                            <th>Intake Type</th>
+                            <th>Intake Condition</th>
+                            <th>Animal Type</th>
+                            <th>Sex Intake</th>
+                            <th>Color Intake</th>
+                            <th>DateTime Outcome</th>
+                            <th>Outcome Type</th>
+                            <th>Sex Outcome</th>
+                            <th>Fixed Changed</th>
+                            <th>Age Range</th>
+                            <th>Length of Stay</th>
+                            <th>Breed Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>

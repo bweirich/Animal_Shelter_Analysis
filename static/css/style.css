@@ -1,0 +1,9 @@
+body {
+    color:#f7f7f7;
+}
+
+.jumbotron {
+    background-image: url("../images/banner_image.png");
+    background-size: 50% 100%;
+    text-align: center;
+}
