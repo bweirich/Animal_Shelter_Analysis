@@ -1,4 +1,4 @@
-var data = d3.csv("resources/results.csv", function(d) {
+var data = d3.csv("resources/results.csv", function(data) {
   return {
     Animal_Id: data['Animal ID'], 
   Name_intake: data.Name_intake,
