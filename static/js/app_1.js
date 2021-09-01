@@ -1,5 +1,11 @@
 // import the data from data.js
-const tableData = data;
+var tableData = {}; 
+
+d3.json("../resources/results_json.json", function(data) {
+  tableData = data;
+  buildTable(tableData);
+  console.log(tableData);
+});
 
 // reference the HTML table using D3
 var tbody = d3.select("tbody");

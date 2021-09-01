@@ -1,7 +1,11 @@
 // from data.js
-const tableData = d3.csv("resources/results.csv", function(d) {
-  data = d;
-  });;
+var tableData = {}; 
+
+d3.json("../resources/results_json.json", function(data) {
+  tableData = data;
+  buildTable(tableData);
+  console.log(tableData);
+});
 
 // get table references
 var tbody = d3.select("tbody");
