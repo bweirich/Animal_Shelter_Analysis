@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter Analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class='wrapper'>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lag">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="data.html">Data Table</a>
+            <a class="navbar-brand" href="machine.html">Machine Learning Model</a>
+        </nav>    
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Animal Shelter Analysis</h1>
+    </div>
+    <div class="container-fluid">
+        <h2>Database</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <form class="bg-dark">
+                    <p>Filter Search</p>
+                </form>
+                <ul class="list-group bg-dark">
+                    <li class="list-group-item bg-dark">
+                        <label for="Animal_Type_Intake">Select Animal Type</label>
+                        <select id="Animal_Type_intake" class="form-control">
+                            <option>Bird</option>
+                            <option>Cat</option>
+                            <option>Dog</option>
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Intake_Type">Select Intake Type</label>
+                        <select id="Intake_Type" class="form-control">
+                            <option>Stray</option>
+                            <option>Euthanasia Request</option>
+                            <option>Owner Surrender</option>
+                            <option>Public Assist</option>
+                            <option>Wildlife</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Sex Intake">Select Intake Sex</label>
+                        <select id="Sex_Intake" class="form-control">
+                            <option>Intact Male</option>
+                            <option>Intact Female</option>
+                            <option>Neutered Male</option>
+                            <option>Spayed Female</option>
+                            <option>Unknown</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Color">Select Color</label>
+                        <select id="Color_intake" class="form-control">
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Brindle</option>
+                            <option>Brown</option>
+                            <option>Calico</option>
+                            <option>Gray</option>
+                            <option>Merle</option>
+                            <option>Orange</option>
+                            <option>Point</option>
+                            <option>Red</option>
+                            <option>Tabby</option>
+                            <option>Tricolor</option>
+                            <option>White</option>
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Breed">Select Breed</label>
+                        <select id="breed_type" class="form-control">
+                            <option>Mix</option>
+                            <option>Bully Dogs</option>
+                            <option>Chihuahua</option>
+                            <option>Domestic Medium Hair Cat</option>
+                            <option>Domestic Shorthair Cat</option>
+                            <option>German Shepherd</option>
+                            <option>Herding Dogs</option>
+                            <option>Hound Dogs</option>
+                            <option>Husky Dogs</option>
+                            <option>Other Cat</option>
+                            <option>Retriever Breeds</option>
+                            <option>Terrier Dogs</option>
+                            <option>Small Dogs</option>
+                            <option>Sporting Dogs</option>
+                            <option>X Large Dogs</option>
+                            <option>Working Dogs</option>
+                            <option>Wildlife</option>
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Age">Select Age</label>
+                        <select id="Age_Bucket" class="form-control">
+                            <option>Less than 1 week</option>
+                            <option>1-6 weeks</option>
+                            <option>1-6 months</option>
+                            <option>7-12 months</option>
+                            <option>1-3 years</option>
+                            <option>4-6 years</option>
+                            <option>7+ years</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Intake Condition">Select Intake Condition</label>
+                        <select id="IntakeCondition" class="form-control">
+                            <option>Aged</option>
+                            <option>Feral</option>
+                            <option>Injured</option>
+                            <option>Normal</option>
+                            <option>Nursing</option>
+                            <option>Pregnant</option>
+                            <option>Sick</option>
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Outcome">Select Outcome Type</label>
+                        <select id="Outcome_Type" class="form-control">
+                            <option>Adoption</option>
+                            <option>Died</option>
+                            <option>Euthanasia</option>
+                            <option>Missing</option>
+                            <option>Return to Owner</option>
+                            <option>Transfer</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Outome Sex">Select Outcome Sex</label>
+                        <select id="Sex_upon_Outcome" class="form-control">
+                            <option>Intact Male</option>
+                            <option>Intact Female</option>
+                            <option>Neutered Male</option>
+                            <option>Spayed Female</option>
+                            <option>Unknown</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="Length Of Stay">Select Length of Stay</label>
+                        <select id="stay_length" class="form-control">
+                            <option>1 day</option>
+                            <option>1 week</option>
+                            <option>1 month</option>
+                            <option>3 months</option>
+                            <option>6 months</option>
+                            <option>1 year</option>
+                            <option>Over 1 year'</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-striped">
+                    <thead>
+                        <tr></tr>
+                            <th>Animal Type</th>
+                            <th>Intake Type</th>
+                            <th>Intake Sex</th>
+                            <th>Color</th>
+                            <th>Breed</th>
+                            <th>Age</th>
+                            <th>Intake Condition</th>
+                            <th>Found Location</th>
+                            <th>Outcome</th>
+                            <th>Outcome Sex</th>
+                            <th>Length of Stay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>

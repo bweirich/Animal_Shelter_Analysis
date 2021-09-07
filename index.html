@@ -16,11 +16,24 @@
 <body class="bg-dark">
     <div class='wrapper'>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lag">
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand">Austin Animal Shelter Data Analysis</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="machine.html">Machine Learning Model</a>
+                    </li>
+                </ul>
+            </div>
         </nav>    
     </div>
     <div class="jumbotron">
-        <h1 class="display-4">The Truth Is Out There</h1>
+        <h1 class="display-4">Animal Shelter Analysis</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -53,7 +66,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h3>Visual Analysis</h3>
+                <h3>Data Analysis</h3>
                 <p>One of the most important features to the animal shelter as far as space is concerned is 
                     the length of stay of the animals and the associated characteristics of the animal that 
                     impact the length of stay.  The below visual shows the average length of stay by different 
@@ -186,7 +199,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <iv class="container-fluid">
         <div class="row">
             <div class="col-md-9">
                 <div class='tableauPlaceholder' id='viz1630117846409' style='position: relative'>
@@ -218,59 +231,6 @@
                 <p></p>
                 <p>This visual can be filter by animal type.
                 </p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <form class="bg-dark">
-                    <p>Filter Search</p>
-                </form>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="date">Enter Date</label>
-                        <input type="text" placeholder="1/10/2010" id="datetime" class="form-control"/>
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="city">Enter City</label>
-                        <input type="text" placeholder="fresno" id="city" class="form-control"/>
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="ca" id="state" class="form-control"/>
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="country">Enter Country</label>
-                        <input type="text" placeholder="us" id="country" class="form-control"/>
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="shape">Enter Shape</label>
-                        <input type="text" placeholder="light" id="shape" class="form-control"/>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-9">
-                <table class="table table-striped">
-                    <thead>
-                        <tr></tr>
-                            <th>Animal Type</th>
-                            <th>Intake Type</th>
-                            <th>Intake Sex</th>
-                            <th>Color</th>
-                            <th>Breed</th>
-                            <th>Age</th>
-                            <th>Intake Condition</th>
-                            <th>Found Location</th>
-                            <th>Outcome</th>
-                            <th>Outcome Sex</th>
-                            <th>Length of Stay</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
