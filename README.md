@@ -85,6 +85,7 @@ The final result after training the model is shown above, the overall accuracy s
 <a name="database"></a>
 ## Database 
 
+[ETL Code](https://github.com/bweirich/Animal_Shelter_Analysis/blob/main/ETL_Data.ipynb)
 ### ETL
 
 - The following features where transformed before loading the data into the database:
