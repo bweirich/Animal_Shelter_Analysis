@@ -6,7 +6,7 @@
 [Database](#database)
 [Technology](#tech)
 
-![Link to Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
+[Link to Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
 
 <a name="purpose"></a>
 ## Purpose
@@ -72,7 +72,8 @@ The limitations of RandomForestClassification are:
 
 ### Precision Score
 
-![](cathytian/resources/acc.png)
+![](https://raw.githubusercontent.com/bweirich/Animal_Shelter_Analysis/main/images/class_report.PNG)
+![](https://raw.githubusercontent.com/bweirich/Animal_Shelter_Analysis/main/images/confusion_matrix.PNG)
 
 The final result after training the model is shown above, the overall accuracy score for our model is 75%, and the individual precision score for all of the target variable are above 65%. Since our purpose is to predict whether or not an animal will be adopted based on characteristics upon intake in order to avoid experiencing over crowding and the inability to maintain a no-kill status. Therefore, a precision score of 75% is an acceptable level of precision for our model. Also, the values of F-1 and precision are more important to us compared to recall as a false positive is more acceptable than false negative.
 
@@ -109,7 +110,7 @@ The final result after training the model is shown above, the overall accuracy s
 - Database includes two tables as shown in below image (intake table and outcome table)
 - The tables are inner joined on animal_id using SQL with following ERD relationships
 
-  ![](cathytian//segment1_ERD.png)
+  ![](https://raw.githubusercontent.com/bweirich/Animal_Shelter_Analysis/main/images/segment1_ERD.png)
 
 - The resulting table is transformed back to Pandas DataFrame psycopg2 for analysis with machine learning models. 
 
