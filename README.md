@@ -7,7 +7,7 @@
 - [Technology](#tech)
 
 ## Webpage 
-[Link to Analysis Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
+[Please view the Analysis Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
 
 <a name="purpose"></a>
 ## Purpose
@@ -33,7 +33,7 @@ The data was sourced from https://data.world which was originally sourced from h
 <a name="machine"></a>
 ## Machine Learning Model
 
-![Machine Learning Code](https://github.com/bweirich/Animal_Shelter_Analysis/blob/main/Prediction_Machine_Learning_Model.ipynb)
+[Machine Learning Code](https://github.com/bweirich/Animal_Shelter_Analysis/blob/main/Prediction_Machine_Learning_Model.ipynb)
 ### Target Variable
 
 Our target variable is Outcome_Type which is a classification variable.  During preprocessing this was reduced and combined to the following values:
