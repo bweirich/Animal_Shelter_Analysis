@@ -73,7 +73,10 @@ The limitations of RandomForestClassification are:
 
 ### Precision Score
 
+#### Classification Report
 ![](https://raw.githubusercontent.com/bweirich/Animal_Shelter_Analysis/main/images/class_report.PNG)
+
+#### Confusion Matrix
 ![](https://raw.githubusercontent.com/bweirich/Animal_Shelter_Analysis/main/images/confusion_matrix.PNG)
 
 The final result after training the model is shown above, the overall accuracy score for our model is 75%, and the individual precision score for all of the target variable are above 65%. Since our purpose is to predict whether or not an animal will be adopted based on characteristics upon intake in order to avoid experiencing over crowding and the inability to maintain a no-kill status. Therefore, a precision score of 75% is an acceptable level of precision for our model. Also, the values of F-1 and precision are more important to us compared to recall as a false positive is more acceptable than false negative.
