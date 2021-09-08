@@ -1,12 +1,13 @@
 # Austin Animal Shelter Analysis
 
-[Purpose](#purpose)
-[Data Source](#data_source)
-[Machine Learning Model](#machine)
-[Database](#database)
-[Technology](#tech)
+- [Purpose](#purpose)
+- [Data Source](#data_source)
+- [Machine Learning Model](#machine)
+- [Database](#database)
+- [Technology](#tech)
 
-[Link to Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
+## Webpage 
+[Link to Wnalysis Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
 
 <a name="purpose"></a>
 ## Purpose
