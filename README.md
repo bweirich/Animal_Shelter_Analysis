@@ -7,7 +7,7 @@
 - [Technology](#tech)
 
 ## Webpage 
-[Link to Wnalysis Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
+[Link to Analysis Webpage](https://bweirich.github.io/Animal_Shelter_Analysis/)
 
 <a name="purpose"></a>
 ## Purpose
