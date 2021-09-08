@@ -7,3 +7,13 @@ body {
     background-size: 50% 100%;
     text-align: center;
 }
+
+.navbar-nav .nav-item:not(:last-child) {
+    border-right: 1px solid silver;
+ }
+ 
+ @media (max-width: 768px) {
+   .navbar-nav .nav-item:not(:last-child) {
+     border-right: none;
+   }
+ }
